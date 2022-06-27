@@ -1,0 +1,33 @@
+Error: Account Fv2RBGCAWb1XNRuktkx1xLnnC62KMpEvs5Km9hugK1NH is not an upgradeable program or already in use
+Error: Dynamic program error: No default signer found, run "solana-keygen new -o ./target/deploy/counter-keypair.json" to create a new one
+
+ answer - solana-keygen new -o ./target/deploy/counter-keypair.json
+
+
+
+account already in use 
+
+answer - change in anchor.toml default account
+
+
+
+
+
+
+validator not found or can not find latest blockhash
+
+answer - change in anchor.toml cluster and programs
+
+
+
+
+cluster config 
+
+1 - solana config set --url localhost
+2 - solana config set --url devnet
+
+get set configed cluster 
+1 - solana config get
+
+solana address -k target/deploy/my_solana_program-keypair.json
+

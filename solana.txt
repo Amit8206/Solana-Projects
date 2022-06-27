@@ -1,0 +1,39 @@
+export PATH="/home/amit/.local/share/solana/install/active_release/bin:$PATH" to /home/amit/.profile
+
+
+
+export PATH="/home/amit/.local/share/solana/install/active_release/bin:$PATH"
+
+
+
+
+
+solana airdrop 10 9Y74z6abBU8qzHUD2GYSwRLAWksxf9U7Qq9eeZ2X3baz --url https://api.devnet.solana.com
+
+
+solana balance --url https://api.devnet.solana.com
+
+
+solana transfer --from 9Y74z6abBU8qzHUD2GYSwRLAWksxf9U7Qq9eeZ2X3baz Hu4A3ZgHPWKz5sY5wVKFTcKeeWpJXJ7dMR1BUaMWj2zk 0.5 --allow-unfunded-recipient --url https://api.devnet.solana.com --fee-payer 9Y74z6abBU8qzHUD2GYSwRLAWksxf9U7Qq9eeZ2X3baz
+
+
+
+/home/<your user>/.config/solana/id.json
+
+
+
+
+Acc1 - 
+
+solana wallet create - solana-keygen new 
+pubkey - solana-keygen pubkey [keypair.json PATH]
+
+solana Program address - solana address -k target/deploy/counter_app-keypair.json
+
+
+Error: Account Fv2RBGCAWb1XNRuktkx1xLnnC62KMpEvs5Km9hugK1NH is not an upgradeable program or already in use
+Error: Dynamic program error: No default signer found, run "solana-keygen new -o ./target/deploy/counter-keypair.json" to create a new one
+
+solana-keygen new -o ./target/deploy/counter-keypair.json
+
+default account - 9j4jpy6QmxVL8Qm3jCxRoXCFJixMx3CmPMKAy1XoSf1N
